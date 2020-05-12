@@ -50,7 +50,42 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
+        handler(constructTemplate(for: complication))
     }
     
+}
+
+
+private func constructTemplate(for complication: CLKComplication) -> CLKComplicationTemplate? {
+    return nil
+
+//    switch complication.family {
+//        case .modularSmall:
+//            let template = CLKComplicationTemplateModularSmallSimpleText()
+//            let provider = CLKSimpleTextProvider(text: String(5))
+//            template.textProvider = provider
+//            return template
+//        case .modularLarge:
+//            return nil
+//        case .utilitarianSmall:
+//            return nil
+//        case .utilitarianSmallFlat:
+//            return nil
+//        case .utilitarianLarge:
+//            return nil
+//        case .circularSmall:
+//            return nil
+//        case .extraLarge:
+//            return nil
+//        case .graphicCorner:
+//            return nil
+//        case .graphicBezel:
+//            return nil
+//        case .graphicCircular:
+//            return nil
+//        case .graphicRectangular:
+//            return nil
+//        default:
+//            return nil
+//    }
 }
