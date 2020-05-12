@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9EB79CB246B13CA00592826 /* Counter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D9EB79CA246B13CA00592826 /* Counter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9EB79D1246B13CA00592826 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9EB79CF246B13CA00592826 /* Interface.storyboard */; };
+		D9EB79D3246B13CC00592826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9EB79D2246B13CC00592826 /* Assets.xcassets */; };
+		D9EB79DA246B13CC00592826 /* Counter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D9EB79D9246B13CC00592826 /* Counter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9EB79DF246B13CC00592826 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB79DE246B13CC00592826 /* ContentView.swift */; };
+		D9EB79E1246B13CC00592826 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB79E0246B13CC00592826 /* HostingController.swift */; };
+		D9EB79E3246B13CC00592826 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB79E2246B13CC00592826 /* ExtensionDelegate.swift */; };
+		D9EB79E5246B13CC00592826 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB79E4246B13CC00592826 /* ComplicationController.swift */; };
+		D9EB79E7246B13CC00592826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9EB79E6246B13CC00592826 /* Assets.xcassets */; };
+		D9EB79EA246B13CC00592826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9EB79E9246B13CC00592826 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9EB79CC246B13CA00592826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9EB79C0246B13CA00592826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9EB79C9246B13CA00592826;
+			remoteInfo = "Counter WatchKit App";
+		};
+		D9EB79DB246B13CC00592826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9EB79C0246B13CA00592826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9EB79D8246B13CC00592826;
+			remoteInfo = "Counter WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9EB79F1246B13CC00592826 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D9EB79DA246B13CC00592826 /* Counter WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9EB79F5246B13CC00592826 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D9EB79CB246B13CA00592826 /* Counter WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D9EB79C6246B13CA00592826 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9EB79CA246B13CA00592826 /* Counter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Counter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9EB79D0246B13CA00592826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D9EB79D2246B13CC00592826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9EB79D4246B13CC00592826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9EB79D9246B13CC00592826 /* Counter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Counter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9EB79DE246B13CC00592826 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9EB79E0246B13CC00592826 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		D9EB79E2246B13CC00592826 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D9EB79E4246B13CC00592826 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D9EB79E6246B13CC00592826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9EB79E9246B13CC00592826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9EB79EB246B13CC00592826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9EB79D6246B13CC00592826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9EB79BF246B13CA00592826 = {
+			isa = PBXGroup;
+			children = (
+				D9EB79CE246B13CA00592826 /* Counter WatchKit App */,
+				D9EB79DD246B13CC00592826 /* Counter WatchKit Extension */,
+				D9EB79C7246B13CA00592826 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9EB79C7246B13CA00592826 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9EB79C6246B13CA00592826 /* Counter.app */,
+				D9EB79CA246B13CA00592826 /* Counter WatchKit App.app */,
+				D9EB79D9246B13CC00592826 /* Counter WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9EB79CE246B13CA00592826 /* Counter WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D9EB79CF246B13CA00592826 /* Interface.storyboard */,
+				D9EB79D2246B13CC00592826 /* Assets.xcassets */,
+				D9EB79D4246B13CC00592826 /* Info.plist */,
+			);
+			path = "Counter WatchKit App";
+			sourceTree = "<group>";
+		};
+		D9EB79DD246B13CC00592826 /* Counter WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D9EB79DE246B13CC00592826 /* ContentView.swift */,
+				D9EB79E0246B13CC00592826 /* HostingController.swift */,
+				D9EB79E2246B13CC00592826 /* ExtensionDelegate.swift */,
+				D9EB79E4246B13CC00592826 /* ComplicationController.swift */,
+				D9EB79E6246B13CC00592826 /* Assets.xcassets */,
+				D9EB79EB246B13CC00592826 /* Info.plist */,
+				D9EB79E8246B13CC00592826 /* Preview Content */,
+			);
+			path = "Counter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D9EB79E8246B13CC00592826 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D9EB79E9246B13CC00592826 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9EB79C5246B13CA00592826 /* Counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9EB79F6246B13CC00592826 /* Build configuration list for PBXNativeTarget "Counter" */;
+			buildPhases = (
+				D9EB79C4246B13CA00592826 /* Resources */,
+				D9EB79F5246B13CC00592826 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9EB79CD246B13CA00592826 /* PBXTargetDependency */,
+			);
+			name = Counter;
+			productName = Counter;
+			productReference = D9EB79C6246B13CA00592826 /* Counter.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		D9EB79C9246B13CA00592826 /* Counter WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9EB79F2246B13CC00592826 /* Build configuration list for PBXNativeTarget "Counter WatchKit App" */;
+			buildPhases = (
+				D9EB79C8246B13CA00592826 /* Resources */,
+				D9EB79F1246B13CC00592826 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9EB79DC246B13CC00592826 /* PBXTargetDependency */,
+			);
+			name = "Counter WatchKit App";
+			productName = "Counter WatchKit App";
+			productReference = D9EB79CA246B13CA00592826 /* Counter WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D9EB79D8246B13CC00592826 /* Counter WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9EB79EE246B13CC00592826 /* Build configuration list for PBXNativeTarget "Counter WatchKit Extension" */;
+			buildPhases = (
+				D9EB79D5246B13CC00592826 /* Sources */,
+				D9EB79D6246B13CC00592826 /* Frameworks */,
+				D9EB79D7246B13CC00592826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Counter WatchKit Extension";
+			productName = "Counter WatchKit Extension";
+			productReference = D9EB79D9246B13CC00592826 /* Counter WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9EB79C0246B13CA00592826 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Roman Peters";
+				TargetAttributes = {
+					D9EB79C5246B13CA00592826 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					D9EB79C9246B13CA00592826 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					D9EB79D8246B13CC00592826 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D9EB79C3246B13CA00592826 /* Build configuration list for PBXProject "Counter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9EB79BF246B13CA00592826;
+			productRefGroup = D9EB79C7246B13CA00592826 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9EB79C5246B13CA00592826 /* Counter */,
+				D9EB79C9246B13CA00592826 /* Counter WatchKit App */,
+				D9EB79D8246B13CC00592826 /* Counter WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9EB79C4246B13CA00592826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9EB79C8246B13CA00592826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EB79D3246B13CC00592826 /* Assets.xcassets in Resources */,
+				D9EB79D1246B13CA00592826 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9EB79D7246B13CC00592826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EB79EA246B13CC00592826 /* Preview Assets.xcassets in Resources */,
+				D9EB79E7246B13CC00592826 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9EB79D5246B13CC00592826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EB79E1246B13CC00592826 /* HostingController.swift in Sources */,
+				D9EB79E5246B13CC00592826 /* ComplicationController.swift in Sources */,
+				D9EB79DF246B13CC00592826 /* ContentView.swift in Sources */,
+				D9EB79E3246B13CC00592826 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9EB79CD246B13CA00592826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9EB79C9246B13CA00592826 /* Counter WatchKit App */;
+			targetProxy = D9EB79CC246B13CA00592826 /* PBXContainerItemProxy */;
+		};
+		D9EB79DC246B13CC00592826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9EB79D8246B13CC00592826 /* Counter WatchKit Extension */;
+			targetProxy = D9EB79DB246B13CC00592826 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9EB79CF246B13CA00592826 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9EB79D0246B13CA00592826 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9EB79EC246B13CC00592826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9EB79ED246B13CC00592826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9EB79EF246B13CC00592826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Counter WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = JX2H5FWC6T;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Counter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = romanpeters.Counter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		D9EB79F0246B13CC00592826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Counter WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = JX2H5FWC6T;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Counter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = romanpeters.Counter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		D9EB79F3246B13CC00592826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JX2H5FWC6T;
+				IBSC_MODULE = Counter_WatchKit_Extension;
+				INFOPLIST_FILE = "Counter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = romanpeters.Counter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		D9EB79F4246B13CC00592826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JX2H5FWC6T;
+				IBSC_MODULE = Counter_WatchKit_Extension;
+				INFOPLIST_FILE = "Counter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = romanpeters.Counter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		D9EB79F7246B13CC00592826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX2H5FWC6T;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = romanpeters.Counter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D9EB79F8246B13CC00592826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX2H5FWC6T;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = romanpeters.Counter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9EB79C3246B13CA00592826 /* Build configuration list for PBXProject "Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9EB79EC246B13CC00592826 /* Debug */,
+				D9EB79ED246B13CC00592826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9EB79EE246B13CC00592826 /* Build configuration list for PBXNativeTarget "Counter WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9EB79EF246B13CC00592826 /* Debug */,
+				D9EB79F0246B13CC00592826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9EB79F2246B13CC00592826 /* Build configuration list for PBXNativeTarget "Counter WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9EB79F3246B13CC00592826 /* Debug */,
+				D9EB79F4246B13CC00592826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9EB79F6246B13CC00592826 /* Build configuration list for PBXNativeTarget "Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9EB79F7246B13CC00592826 /* Debug */,
+				D9EB79F8246B13CC00592826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9EB79C0246B13CA00592826 /* Project object */;
+}
